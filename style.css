@@ -1,0 +1,89 @@
+
+/* Style the table */
+.budget-tracker {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Style the table headings */
+.budget-tracker th {
+  background-color: #1abc9c;
+  color: white;
+  text-align: left;
+  padding: 8px;
+}
+
+/* Style the table rows */
+.budget-tracker td,
+.budget-tracker th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/* Style the input fields */
+.input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Style the "New entry" button */
+.new-entry {
+  background-color: #1abc9c;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.new-entry:hover {
+  background-color: #148f77;
+}
+
+/* Style the "Delete" button */
+.delete-entry {
+  background-color: #e74c3c;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-entry:hover {
+  background-color: #c0392b;
+}
+
+/* Style the summary row */
+.summary {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Style the total amount */
+.total {
+  font-weight: bold;
+}
+
+/* Style the form fields for mobile devices */
+@media only screen and (max-width: 600px) {
+  .budget-tracker input[type="date"],
+  .budget-tracker input[type="number"],
+  .budget-tracker input[type="text"],
+  .budget-tracker select {
+    width: 100%;
+    margin-top: 0.5em;
+  }
+}
